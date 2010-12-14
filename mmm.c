@@ -6,5 +6,6 @@ int main(int argc, const char *argv[])
         printf("%s\n",a);
         printf("%d\n",a[2]); 
         printf("%d\n",a[6]);
+        printf("\n");
     return 0;
 }
