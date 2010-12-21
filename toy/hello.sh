@@ -1,8 +1,9 @@
 #!/bin/bash
-
-
-
-for h in 1 2 3; 
+# now we do "a.c"->"a"
+WOKDIR=/home/peter/toy/
+cd $WOKDIR
+for file in `ls` 
 do
-    echo $h
+    f=`echo $file|awk -F'.' '{ print  $1 }'`
+    mv $file $f
 done;
