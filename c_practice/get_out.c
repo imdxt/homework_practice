@@ -14,26 +14,26 @@ int main(int argc, const char *argv[])
         aa[i].out=0;
     }
     
-   for(m=0;m<10;m++)
-   {     
-        for(i=0;i<10;i++)
+    //for(m=0;m<50;m++)
+    //{     
+        for(i=0;i<100;i++)
         {        
-        //    for(; ;)
-          //  {
-            //    m++;
-              //  m=m%100;
-                if(aa[i].out==0){
+            for(; ;)
+            {
+                if(aa[m].out==0){
                 j++;
                     if(j==3){
                     j=0;
-                    aa[i].out=1;
+                    aa[m].out=1;
                     a++;
-                    printf("%d : ID=%d out\n",a,aa[i].ID);
-                  //  break;
+                    printf("%d : ID=%d out\n",a,aa[m].ID);
+                    break;
                     } 
                 }
-           // } 
-       }
-    }
+                m++;
+                m=m%100;
+            } 
+           }
+     //}
     return 0;
 }
