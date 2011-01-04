@@ -34,34 +34,42 @@ stu_t *newhead(stu_t *a)
 {
     stu_t *max,*p,*q,*head = (stu_t *)malloc(sizeof(stu_t));
     q = head;
-    while(a != NULL)
+    p = a;
+    while(p != NULL)
     {
-        max=p=a;
-        while(p->next != NULL)
+        p = a;
+        max = p;
+        while(a != NULL)
         {
-            if(max->average < p->next->average)
-                max=p->next;
-             p=p->next;   
+            if(max->average < a->next->average)
+                max=a->next;
+             a = a->next;   
         }
-        if(max == a)
-            a = a->next;
+        if(max == p)
+            p = max->next;
         else
         {
-            p = a;
-            while(p->next != NULL)
+            a = p;
+            while(a->next != NULL)
             {
-                if(p->next == max)
+                if(a->next == max)
                 {
-                    p->next = max->next;
+                   // a->next = max->next;
                     break;
                 }
-                p = p->next;
+                a = a->next;
             }
+            a->next = max->next;
         }
-        *q = *max;
-        q = create(q);
+        q->next = max;
+        q = q->next;
+        q->next = NULL;
+       // *q = *max;
+       // q = create(q);
     }
-    return head;
+    max = head->next;
+    free(q);
+    return max;
 }
 void free_all(stu_t *head)
 {
