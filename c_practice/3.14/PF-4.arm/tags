@@ -1,0 +1,141 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BORD	mouse.c	14;"	d	file:
+C_HEIGHT	mouse.c	12;"	d	file:
+C_WIDTH	mouse.c	11;"	d	file:
+DEBUG	disp-basic.c	12;"	d	file:
+DEBUG	disp-jpeg.c	10;"	d	file:
+DEBUG	display_jpeg1.c	10;"	d	file:
+FB_DEVICE	fb.c	14;"	d	file:
+NODE	link.c	/^jpeg_file_t * NODE(const char *filename, const char *info,$/;"	f
+T___	mouse.c	13;"	d	file:
+X___	mouse.c	15;"	d	file:
+b	main.c	/^int b[800][480];$/;"	v
+basic_disp	disp-basic.c	/^int basic_disp(const char * filename, fb_info fb_inf)$/;"	f
+buffer	music.c	/^struct buffer $/;"	s	file:
+chang_color	change_color.c	/^int chang_color(int x, int y, u32_t color)$/;"	f
+change_color_down	mice_process.c	/^int change_color_down(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_exit	mice_process.c	/^int change_color_exit(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_music	mice_process.c	/^int change_color_music(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_play	mice_process.c	/^int change_color_play(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_preview	mice_process.c	/^int change_color_preview(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_return	mice_process.c	/^int change_color_return(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_slide	mice_process.c	/^int change_color_slide(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_tab	mice_process.c	/^int change_color_tab(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_up	mice_process.c	/^int change_color_up(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+change_color_us	mice_process.c	/^int change_color_us(mouse_event_t mevent, int x, int y, unsigned int color)$/;"	f
+create_jpeg	disp-basic.c	/^int create_jpeg(const char *filejpeg, const char *newfile, fb_info fb_inf)$/;"	f
+cursor_pixel	mouse.c	/^static unsigned long cursor_pixel[C_WIDTH * C_HEIGHT] = {$/;"	v	file:
+decode	music.c	/^int decode(unsigned char const *start, unsigned long length)$/;"	f
+decode_jpeg	jpeg.c	/^u_char *decode_jpeg (const char *filename, fb_info *jpeg_inf)$/;"	f
+decode_small_jpeg	disp-jpeg.c	/^u16_t * decode_small_jpeg(char *filename, fb_info fb_in)$/;"	f
+disappear	change_color.c	/^int disappear(fb_info fb_inf, int x, int y)$/;"	f
+disp_four_pic	disp-jpeg.c	/^int disp_four_pic(int start_num)$/;"	f
+display_baiye1	display_jpeg1.c	/^int display_baiye1(char *filename, fb_info fb_inf)$/;"	f
+display_box	display_jpg3.c	/^int display_box(const char *filename, fb_info fb_inf, fb_info fb_xin)$/;"	f
+display_flash1	display_jpeg3.c	/^int display_flash1(const char *filename, fb_info fb_inf)$/;"	f
+display_flash2	display_jpeg3.c	/^int display_flash2(const char *filename, fb_info fb_inf)$/;"	f
+display_font	font.c	/^int display_font(const char *code,int *len,int x,int y,fb_info fb, u32_t color)$/;"	f
+display_four	display_jpeg3.c	/^int display_four(const char *filename, fb_info fb_inf)$/;"	f
+display_jpeg	display_jpeg1.c	/^int display_jpeg(char *filename, fb_info fb_inf)$/;"	f
+display_jpeg1	display_jpeg1.c	/^int display_jpeg1(char *filename, fb_info fb_inf,int y,int z)$/;"	f
+display_jpeg111	display_jpeg1.c	/^int display_jpeg111(char *filename, fb_info fb_inf)$/;"	f
+display_jpeg12	display_jpeg1.c	/^int display_jpeg12(char *filename, fb_info fb_inf)$/;"	f
+display_jpeg13	display_jpeg1.c	/^int display_jpeg13(char *filename, fb_info fb_inf)$/;"	f
+display_jpeg14	display_jpeg1.c	/^int display_jpeg14(char *filename, fb_info fb_inf)$/;"	f
+display_jpeg2	display_jpeg1.c	/^int display_jpeg2(char *filename, fb_info fb_inf)\/\/si zhou xiang zhong jian$/;"	f
+display_jpeg_1	display_jpeg1.c	/^int display_jpeg_1(char *filename, fb_info fb_inf)$/;"	f
+display_jpeg_dj	disp-jpeg.c	/^int display_jpeg_dj(char *filename, fb_info fb_in)$/;"	f
+display_jpegkaiji	display_jpeg1.c	/^int display_jpegkaiji(char *filename, fb_info fb_inf)$/;"	f
+display_line	display_jpg3.c	/^int display_line(u16_t *buf32, fb_info fb_inf, int x1, int y1, int x2, int y2)$/;"	f
+display_mid_jpeg	disp-jpeg.c	/^int display_mid_jpeg(char *filename, fb_info fb_in, int x, int y)$/;"	f
+display_midtoside	display_jpeg3.c	/^int display_midtoside(const char *filename, fb_info fb_inf)$/;"	f
+display_one_small_jpeg	disp-jpeg.c	/^int display_one_small_jpeg(u16_t *buf32, fb_info fb_in, int x, int y)$/;"	f
+display_scale	display_jpeg1.c	/^int display_scale(char *filename, fb_info fb_inf)$/;"	f
+display_scale1	display_jpeg2.c	/^int display_scale1(char *filename, fb_info fb_inf,int jpeg_w,int jpeg_h)$/;"	f
+display_scale2	display_jpeg1.c	/^int display_scale2(char *filename, fb_info fb_inf)$/;"	f
+display_song	change_color.c	/^int display_song(int *p)$/;"	f
+display_string	font.c	/^int display_string (const char * buf, int x, int y, fb_info fb_inf,u32_t color)$/;"	f
+display_v_up	display_jpg3.c	/^int display_v_up(const char *filename, fb_info fb_inf, fb_info fb_xin)$/;"	f
+display_xie1	display_jpeg3.c	/^int display_xie1(const char *filename, fb_info fb_inf)$/;"	f
+display_zig	display_jpg3.c	/^int display_zig(const char *filename, fb_info fb_inf, fb_info fb_xin)$/;"	f
+error	music.c	/^static enum mad_flow error(void *data, struct mad_stream *stream, struct mad_frame *frame)$/;"	f	file:
+face	font.c	/^static FT_Face face;$/;"	v	file:
+fb_drawcursor	mouse.c	/^int  fb_drawcursor(fb_info fb_inf, int x, int y)$/;"	f
+fb_inf	main.c	/^fb_info fb_inf;$/;"	v
+fb_line	display_jpeg3.c	14;"	d	file:
+fb_line1	display_jpeg2.c	/^int fb_line1(const char *filename, fb_info fb_inf)$/;"	f
+fb_line2	display_jpeg2.c	/^int fb_line2(const char *filename, fb_info fb_inf)$/;"	f
+fb_line222	display_jpeg2.c	/^int fb_line222(u16_t *buf32, fb_info fb_inf,int x1,int y1,int x2,int y2)$/;"	f
+fb_line4	display_jpeg2.c	/^int fb_line4(const char *filename, fb_info fb_inf)$/;"	f
+fb_pixel	fb.c	/^int fb_pixel(fb_info fb_inf, int x, int y, u32_t color)$/;"	f
+fb_pixel_m	mouse.c	/^static int fb_pixel_m(fb_info fb_inf, int x, int y, u32_t color)$/;"	f	file:
+fb_pixel_row	fb.c	/^int fb_pixel_row(fb_info fb_inf, int x, int y, int len, u32_t color)$/;"	f
+fb_restorecursor	mouse.c	/^int fb_restorecursor(fb_info fb_inf, int x, int y)$/;"	f
+fb_savecursor	mouse.c	/^int  fb_savecursor (fb_info fb_inf,int x,int y)$/;"	f
+fb_test	fb.c	/^int fb_test(void)$/;"	f
+filename	link.c	/^	char *filename;$/;"	m	struct:node	file:
+fontfile	font.c	/^static char *fontfile = "mao.ttf";$/;"	v	file:
+info	link.c	/^	char *info;$/;"	m	struct:node	file:
+init_fb	fb.c	/^int init_fb(fb_info *fb_inf)$/;"	f
+init_ft	font.c	/^int init_ft (const char *file, int size)$/;"	f
+init_link	link.c	/^int init_link(const char *pathname)$/;"	f
+input	music.c	/^static enum mad_flow input(void *data, struct mad_stream *stream)$/;"	f	file:
+jpeg_error_exit	jpeg.c	/^static void jpeg_error_exit (j_common_ptr cinfo) {$/;"	f	file:
+jpeg_file_t	link.c	/^typedef struct node jpeg_file_t;$/;"	t	typeref:struct:node	file:
+length	music.c	/^    unsigned long length;$/;"	m	struct:buffer	file:
+library	font.c	/^static FT_Library library;$/;"	v	file:
+m_x	main.c	/^int m_x, m_y;$/;"	v
+m_y	main.c	/^int m_x, m_y;$/;"	v
+main	main.c	/^int main(int argc, char *argv[]) $/;"	f
+mevent	main.c	/^mouse_event_t mevent = {0};$/;"	v
+mice_lock	main.c	/^pthread_mutex_t mice_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+mid_flag	change_color.c	/^int mid_flag = 0;$/;"	v
+mouse_open	mouse.c	/^int mouse_open(char *device_name, int *fd)$/;"	f
+mouse_parse	mouse.c	/^int mouse_parse(const u8_t *buf, mouse_event_t* mevent)$/;"	f
+mp3_fd	music.c	/^char mp3_fd[3];$/;"	v
+mp3_name	music.c	/^char *mp3_name[3] = {"再回首", "小三", "明天会更好"};$/;"	v
+mp3_num	main.c	/^int *mp3_num = NULL;$/;"	v
+next	link.c	/^	jpeg_file_t *next;$/;"	m	struct:node	file:
+node	link.c	/^struct node $/;"	s	file:
+output	music.c	/^enum mad_flow output(void *data, struct mad_header const *header, struct mad_pcm *pcm)$/;"	f
+pic_pool	change_color.c	/^char *pic_pool[12] = $/;"	v
+play	music.c	/^int play(int *p) $/;"	f
+play_flag	main.c	/^int *play_flag = NULL;$/;"	v
+point_t	display_jpeg3.c	/^}point_t;$/;"	t	typeref:struct:__anon2	file:
+pos_start_t	disp-jpeg.c	/^}pos_start_t;$/;"	t	typeref:struct:__anon1	file:
+pos_x	disp-jpeg.c	/^    int pos_x;$/;"	m	struct:__anon1	file:
+pos_y	disp-jpeg.c	/^    int pos_y;$/;"	m	struct:__anon1	file:
+position_id	change_color.c	/^int position_id[4] = {0, 1, 2, 3};$/;"	v
+psize	font.c	/^static int psize = 32;$/;"	v	file:
+restoresong	change_color.c	/^int restoresong(fb_info fb_inf,int x,int y)$/;"	f
+rgb24to16	jpeg.c	/^u16_t * rgb24to16(u8_t *buf24, fb_info jpeg_inf)$/;"	f
+rgb24to32	jpeg.c	/^u32_t * rgb24to32(u8_t *buf24, fb_info jpeg_inf)$/;"	f
+s_font_utf8_to_unicode	font.c	/^static u16_t s_font_utf8_to_unicode (const unsigned char *utf8, int *len)$/;"	f	file:
+save_cursor	mouse.c	/^unsigned long save_cursor[C_WIDTH * C_HEIGHT];$/;"	v
+save_song	change_color.c	/^unsigned long save_song[song_w*song_h];$/;"	v
+scale	music.c	/^static inline signed int scale(mad_fixed_t sample)$/;"	f	file:
+scale24	jpeg.c	/^u8_t * scale24(u8_t *buf24, fb_info new_inf, fb_info jpeg_inf)$/;"	f
+scan_do	main.c	/^void * scan_do(void *arg)$/;"	f
+set_dsp	music.c	/^void set_dsp(void)$/;"	f
+slid_flag	main.c	/^int slid_flag = 0;$/;"	v
+slide_do	main.c	/^void * slide_do(void *p)$/;"	f
+song_disp_flag	main.c	/^int *song_disp_flag = NULL;$/;"	v
+song_h	change_color.c	6;"	d	file:
+song_w	change_color.c	5;"	d	file:
+soundfd	music.c	/^int soundfd;$/;"	v
+start	music.c	/^    unsigned char const *start;$/;"	m	struct:buffer	file:
+status_p	main.c	/^int *status_p = NULL;$/;"	v
+store	main.c	/^int store = -1 ;$/;"	v
+swap	display_jpeg2.c	/^void swap(int *a,int *b)$/;"	f
+swap	display_jpg3.c	/^static void swap(int *a, int *b)$/;"	f	file:
+u_char	jpeg.c	23;"	d	file:
+we_slide_do	main.c	/^void *we_slide_do(void *p)$/;"	f
+whitch_pic	main.c	/^int whitch_pic = 0;$/;"	v
+writedsp	music.c	/^int writedsp(int c)$/;"	f
+x	display_jpeg3.c	/^    int x;$/;"	m	struct:__anon2	file:
+y	display_jpeg3.c	/^    int y;$/;"	m	struct:__anon2	file:
