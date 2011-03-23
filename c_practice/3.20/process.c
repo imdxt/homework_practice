@@ -17,6 +17,7 @@
 #define TCP_PORT1 31000
 #define TCP_PORT 40001
 
+#if 0
 int get_filename(char *dir_p,char namebuf[][128])//参数为 文件目录 存放文件名的缓冲buf
 {
     DIR *d;
@@ -38,6 +39,7 @@ int get_filename(char *dir_p,char namebuf[][128])//参数为 文件目录 存放
     closedir(d);
     return 0;
 }
+#endif
 
 void removefiles(char* dirname)
 {
@@ -87,8 +89,6 @@ int main(int argc, char *argv[])
     int fd;
 
     sprintf(PORT,"%s",ID+5);
-    //TCP_PORT = 20001 + atoi(PORT);
-    //printf("%d\n",TCP_PORT);
     bzero(&addr,sizeof(addr));
     bzero(&servaddr,sizeof(servaddr));
     bzero(&sendaddr,sizeof(sendaddr));
@@ -182,17 +182,12 @@ exec_fork:
                         removefiles("/home/dong/ADMN4/image/");
                         removefiles("/home/dong/ADMN4/text/");
                         removefiles("/home/dong/ADMN4/other/");
-                        printf("等待接收-----!!!!\n");
                         int c_len = 0;
-                        int size = 4;
-                        read(sockfd,&c_len,size);
+                        read(sockfd,&c_len,sizeof(int));
                         printf("%d\n",c_len);
                         //while(1)
                         //{
-                        #if 1
-                            
                             int ret = 0;
-
                             while(1)
                             {
                                 ret += read(sockfd, TCP_buf+ret, c_len-ret);
@@ -214,8 +209,8 @@ exec_fork:
                             len_p = strstr(TCP_e+1,"FiLeLeNgHt=");
                             len_p += strlen("FiLeLeNgHt=");
                             c_len =  atoi(len_p);
+                            printf("%d\n",c_len);
 
-                           
                             sprintf(temp,"/home/dong/ADMN4/%s/%s",type_p,filename_p);
 
                             printf("%s\n",temp);
@@ -228,14 +223,15 @@ exec_fork:
                             int bufsize = 1024;
                             for (i = 0; i < c_len/1024; i++) 
                             {
-                                ret = 0;
                                 while(1)
                                 {
                                     ret += read(sockfd, TCP_buf+ret, bufsize-ret);
-                                    if(ret == bufsize) break;
+                                    if(ret == bufsize)
+                                    {
+                                        ret = 0;
+                                        break;
+                                    }
                                 }
-                                //read(sockfd,TCP_buf,1024);
-                                perror("read11");
                                 write(fd,TCP_buf,bufsize);
                             }
                             bzero(TCP_buf,sizeof(TCP_buf));
@@ -246,9 +242,7 @@ exec_fork:
                                 ret += read(sockfd, TCP_buf+ret, c_len-ret);
                                 if(ret == c_len) break;
                             }
-                            printf("len ----%s\n",TCP_buf);
                             write(fd,TCP_buf,c_len);
-#endif
                             printf("save file success!\n");
                             //}
                             while(1);
